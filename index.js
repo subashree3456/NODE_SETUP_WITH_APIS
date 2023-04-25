@@ -8,7 +8,12 @@ dotenv.config();
 console.log(process.env.MONGO_URL)
 
 const app = express();   // import panna package ga call panrom so app kidaikuthuh
-const PORT = 4000;
+
+
+
+//const PORT = 4000;
+
+const PORT =process.env.PORT;   // Auto assign port
 
  // const MONGO_URL = "mongodb://127.0.0.1";
 
